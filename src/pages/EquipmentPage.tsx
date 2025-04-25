@@ -12,6 +12,7 @@ const EquipmentPage: React.FC = () => {
   const [sortOption, setSortOption] = useState('');
   const [showFilters, setShowFilters] = useState(false);
 
+  // Update active category based on URL search params
   useEffect(() => {
     const category = searchParams.get('category');
     if (category) {
@@ -21,12 +22,13 @@ const EquipmentPage: React.FC = () => {
     }
   }, [searchParams]);
 
+  // Filter and sort products based on active category and sort option
   useEffect(() => {
-    // Filter products by category
     let result = products;
 
+    // Filter products by category
     if (activeCategory !== 'All') {
-      result = products.filter(product => product.category === activeCategory);
+      result = products.filter((product) => product.category === activeCategory);
     }
 
     // Sort products
@@ -41,6 +43,7 @@ const EquipmentPage: React.FC = () => {
     setFilteredProducts(result);
   }, [activeCategory, sortOption]);
 
+  // Handle category change
   const handleCategoryChange = (category: string) => {
     if (category === 'All') {
       searchParams.delete('category');
@@ -53,12 +56,8 @@ const EquipmentPage: React.FC = () => {
 
   return (
     <div className="bg-white">
+      {/* Hero Section */}
       <div className="relative pt-16 bg-blue-100 mb-8">
-        <img
-          src="/src/assets/images/hero-equipment.jpg" // Use the imported image
-          alt="Trophies and Sports Equipment"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800"></div>
         </div>
@@ -73,9 +72,10 @@ const EquipmentPage: React.FC = () => {
         </div>
       </div>
 
+      {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
         <div className="flex flex-col lg:flex-row gap-8">
-          {/* Mobile filter button */}
+          {/* Mobile Filter Button */}
           <button
             className="lg:hidden flex items-center justify-center py-3 px-4 bg-gray-100 rounded-md mb-4"
             onClick={() => setShowFilters(!showFilters)}
@@ -137,7 +137,7 @@ const EquipmentPage: React.FC = () => {
             </div>
           </aside>
 
-          {/* Main content */}
+          {/* Main Content */}
           <div className="flex-1">
             <div className="mb-6 flex justify-between items-center">
               <p className="text-sm text-gray-500">

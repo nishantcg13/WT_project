@@ -28,7 +28,7 @@ const ContactPage: React.FC = () => {
               We're always happy to hear from you! Please feel free to contact us using any of the methods below,
               or fill out the form and we'll get back to you as soon as possible.
             </p>
-            
+
             <div className="space-y-6">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
@@ -36,20 +36,20 @@ const ContactPage: React.FC = () => {
                 </div>
                 <div className="ml-3 text-gray-700">
                   <p className="font-medium">Our Address</p>
-                  <p>123 Sport Street, Athletica, CA 94103</p>
+                  <p>Rakshewadi Road - Behind S.T stand , Rajgurunagar</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <div className="flex-shrink-0">
                   <Mail className="h-6 w-6 text-blue-600" />
                 </div>
                 <div className="ml-3 text-gray-700">
                   <p className="font-medium">Email Us</p>
-                  <p>info@sportelite.com</p>
+                  <p>20-20sports@gmail.com</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <div className="flex-shrink-0">
                   <Phone className="h-6 w-6 text-blue-600" />
@@ -66,15 +66,15 @@ const ContactPage: React.FC = () => {
                 </div>
                 <div className="ml-3 text-gray-700">
                   <p className="font-medium">Customer Support Hours</p>
-                  <p>Monday - Friday: 9AM - 6PM EST</p>
-                  <p>Saturday: 10AM - 4PM EST</p>
+                  <p>Monday - Friday: 9AM - 6PM IST</p>
+                  <p>Saturday: 10AM - 4PM IST</p>
                 </div>
               </div>
             </div>
 
             <div className="mt-12">
               <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
-                <img 
+                <img
                   src="https://images.pexels.com/photos/5673488/pexels-photo-5673488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="Customer service team"
                   className="w-full h-full object-center object-cover"
@@ -82,7 +82,7 @@ const ContactPage: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
@@ -186,14 +186,14 @@ const ContactPage: React.FC = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Visit Our Store</h2>
           <div className="aspect-w-16 aspect-h-7 rounded-lg overflow-hidden shadow-lg">
             {/* Replace with your map or an image of a map */}
-            <img 
-              src="https://images.pexels.com/photos/2422588/pexels-photo-2422588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-              alt="Store location map" 
-              className="w-full h-full object-center object-cover" 
+            <img
+              src="https://images.pexels.com/photos/2422588/pexels-photo-2422588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Store location map"
+              className="w-full h-full object-center object-cover"
             />
           </div>
           <div className="mt-6 text-center text-gray-600">
-            <p>We're conveniently located in downtown Athletica, with plenty of parking available.</p>
+            <p>We're conveniently located in Rakshewadi Road - Behind S.T stand , Rajgurunagar</p>
             <p className="mt-2">Opening Hours: Monday to Saturday, 9:00 AM - 8:00 PM</p>
           </div>
         </div>

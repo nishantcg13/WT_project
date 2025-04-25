@@ -2,10 +2,13 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ProductCard from './ProductCard';
-import { getFeaturedProducts } from '../data/products';
+import { products } from '../data/products';
 
 const FeaturedProducts: React.FC = () => {
-  const featuredProducts = getFeaturedProducts();
+  // Get the top 5 best-selling products based on rating
+  const bestSellingProducts = [...products]
+    .sort((a, b) => b.rating - a.rating) // Sort by rating in descending order
+    .slice(0, 5); // Take the top 5 products
 
   return (
     <section className="py-16 bg-gray-50">
@@ -17,8 +20,8 @@ const FeaturedProducts: React.FC = () => {
               Our most popular items chosen by athletes around the world. Quality gear that delivers exceptional performance.
             </p>
           </div>
-          <Link 
-            to="/equipment" 
+          <Link
+            to="/equipment"
             className="hidden md:flex items-center text-blue-600 hover:text-blue-800 font-medium"
           >
             View All
@@ -26,15 +29,16 @@ const FeaturedProducts: React.FC = () => {
           </Link>
         </div>
 
+        {/* Display the best-selling products */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-          {featuredProducts.map((product) => (
+          {bestSellingProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
 
         <div className="mt-10 text-center md:hidden">
-          <Link 
-            to="/equipment" 
+          <Link
+            to="/equipment"
             className="inline-flex items-center px-6 py-3 border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white rounded-md transition-colors font-medium"
           >
             View All Products

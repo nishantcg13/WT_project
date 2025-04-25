@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">About SportElite</h3>
             <p className="text-gray-400 mb-4">
-              SportElite provides premium sports equipment for athletes of all levels. 
+              20-20 Sports provides premium sports equipment for athletes of all levels. 
               Our mission is to empower every athlete with the best gear possible.
             </p>
             <div className="flex space-x-4">

@@ -28,7 +28,7 @@ const AboutPage: React.FC = () => {
               Empowering athletes to reach their potential
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              At SportElite, we're dedicated to providing the highest quality sports equipment that helps athletes 
+              At SportElite, we're dedicated to providing the highest quality sports equipment that helps athletes
               of all levels achieve their goals and reach new heights in their performance.
             </p>
           </div>
@@ -42,7 +42,7 @@ const AboutPage: React.FC = () => {
                 <div className="ml-16">
                   <h3 className="text-lg leading-6 font-medium text-gray-900">Quality First</h3>
                   <p className="mt-2 text-base text-gray-500">
-                    We never compromise on quality. Every product we offer is carefully selected and tested 
+                    We never compromise on quality. Every product we offer is carefully selected and tested
                     to ensure it meets our high standards.
                   </p>
                 </div>
@@ -55,7 +55,7 @@ const AboutPage: React.FC = () => {
                 <div className="ml-16">
                   <h3 className="text-lg leading-6 font-medium text-gray-900">Customer Focus</h3>
                   <p className="mt-2 text-base text-gray-500">
-                    Our customers are at the heart of everything we do. We're committed to providing 
+                    Our customers are at the heart of everything we do. We're committed to providing
                     exceptional service and support.
                   </p>
                 </div>
@@ -68,7 +68,7 @@ const AboutPage: React.FC = () => {
                 <div className="ml-16">
                   <h3 className="text-lg leading-6 font-medium text-gray-900">Innovation Driven</h3>
                   <p className="mt-2 text-base text-gray-500">
-                    We constantly seek out the most innovative sports equipment to help our customers 
+                    We constantly seek out the most innovative sports equipment to help our customers
                     stay ahead of the competition.
                   </p>
                 </div>
@@ -87,19 +87,16 @@ const AboutPage: React.FC = () => {
                 Our Story
               </h2>
               <p className="mt-3 max-w-3xl text-lg text-gray-500">
-                SportElite was founded in 2010 by a group of former professional athletes who were 
-                frustrated with the lack of high-quality sports equipment available to the public.
+                2020 Sports – Crafting Excellence Since 2015
+
+                2020 Sports was founded in 2015 with a passion for sports and a vision to provide quality equipment to athletes at every level. While we initially focused on sports gear, we soon recognized a growing demand for high-quality trophies and awards.
               </p>
               <div className="mt-8 space-y-4">
                 <p className="text-gray-500">
-                  Starting with just a small selection of basketball equipment, we've grown to offer premium gear 
-                  across a wide range of sports. Our journey has been driven by a passion for sports and a 
-                  commitment to excellence.
+                  What started as a small step into the trophy business quickly turned into our hallmark. With dedication and craftsmanship, we earned a name across Maharashtra as trusted trophy manufacturers. Today, we specialize in creating custom trophies tailored to every unique requirement—from school events and corporate functions to major sports tournaments.
                 </p>
                 <p className="text-gray-500">
-                  Today, SportElite is recognized as a leading provider of sports equipment, trusted by 
-                  recreational players and professional athletes alike. We continue to expand our product 
-                  offerings while maintaining our founding principles of quality, innovation, and customer service.
+                  We take pride in delivering finely finished, elegant trophies at pocket-friendly prices, ensuring both quality and customer satisfaction. At 2020 Sports, your moment of recognition becomes a masterpiece.
                 </p>
               </div>
             </div>

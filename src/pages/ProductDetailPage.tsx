@@ -6,7 +6,7 @@ import { Star, ArrowLeft } from 'lucide-react';
 const ProductDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const product = getProductById(parseInt(id || '0', 10));
-  
+
   // Simulate multiple product images for demo
   const productImages = [
     product?.image,
@@ -86,18 +86,17 @@ const ProductDetailPage: React.FC = () => {
                   {[...Array(5)].map((_, i) => (
                     <Star
                       key={i}
-                      className={`h-5 w-5 ${
-                        i < Math.floor(product.rating)
-                          ? 'text-yellow-400 fill-current'
-                          : 'text-gray-300'
-                      }`}
+                      className={`h-5 w-5 ${i < Math.floor(product.rating)
+                        ? 'text-yellow-400 fill-current'
+                        : 'text-gray-300'
+                        }`}
                     />
                   ))}
                   <span className="ml-2 text-sm text-gray-600">{product.rating} ({reviewCount} reviews)</span>
                 </div>
                 <span className="text-sm text-gray-600">Category: {product.category}</span>
               </div>
-              <p className="text-3xl font-bold text-gray-900 mb-4">${product.price.toFixed(2)}</p>
+              <p className="text-3xl font-bold text-gray-900 mb-4">₹{product.price.toFixed(2)}</p>
               <p className="text-gray-600 mb-6">{product.description}</p>
 
               <div className="mb-6">
