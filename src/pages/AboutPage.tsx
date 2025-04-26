@@ -10,7 +10,7 @@ const AboutPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
-              About SportElite
+              About 20-20 Sports
             </h1>
             <p className="mt-6 max-w-3xl mx-auto text-xl text-blue-100">
               Providing high-quality sports equipment to athletes of all levels since 2010.
@@ -28,7 +28,7 @@ const AboutPage: React.FC = () => {
               Empowering athletes to reach their potential
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              At SportElite, we're dedicated to providing the highest quality sports equipment that helps athletes
+              At 20-20 Sports, we're dedicated to providing the highest quality sports equipment that helps athletes
               of all levels achieve their goals and reach new heights in their performance.
             </p>
           </div>
